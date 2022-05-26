@@ -9,6 +9,7 @@ const AddReview = () => {
 
     // const [reviews, setReviews] = useState([]);
     const [user] = useAuthState(auth);
+    console.log('amder user er name ki', user)
     // const navigate = useNavigate()
 
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
@@ -30,7 +31,7 @@ const AddReview = () => {
                 if (result.success) {
                     const img = result.data.url;
                     const reviewInfo = {
-                        name: user.name,
+                        name: user.displayName,
                         shortDesc: data.shortDesc,
                         img: img
                     }
