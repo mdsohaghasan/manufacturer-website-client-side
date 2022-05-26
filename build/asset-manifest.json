@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1e73c99e.css",
+    "main.js": "/static/js/main.331397ee.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/sohag.png": "/static/media/sohag.f90a16fe2422ff7de63a.png",
+    "index.html": "/index.html",
+    "main.1e73c99e.css.map": "/static/css/main.1e73c99e.css.map",
+    "main.331397ee.js.map": "/static/js/main.331397ee.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e73c99e.css",
+    "static/js/main.331397ee.js"
+  ]
+}

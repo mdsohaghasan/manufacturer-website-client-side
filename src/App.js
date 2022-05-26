@@ -47,21 +47,21 @@ function App() {
 
           {/* ADMIN ROUTE ---------- */}
           <Route path="addProduct" element={
-            // <RequireAdmin>
+            //  <RequireAdmin>
             <AddProduct />
-            // </RequireAdmin> 
+            //  </RequireAdmin>
           }></Route>
 
           <Route path="manageProducts" element={
             // <RequireAdmin>
             <ManageProducts />
-            // </RequireAdmin> 
+            // </RequireAdmin>
           }></Route>
 
           <Route path="manageusers" element={
-            // <RequireAdmin>
+            //  <RequireAdmin>
             <ManageUsers />
-            // </RequireAdmin>
+            //  </RequireAdmin>
           }></Route>
 
           <Route path="manageOrders" element={

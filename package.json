@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.0.24"
+    "tailwindcss": "^3.0.24",
+    "terser": "^3.14.1"
   }
 }

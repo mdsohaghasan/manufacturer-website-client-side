@@ -12,7 +12,7 @@ const MyReviews = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/reviews?customerEmail=${user.email}`, {
+            fetch(`https://obscure-cove-62090.herokuapp.com/reviews?customerEmail=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`

@@ -6,7 +6,7 @@ const Reviews = () => {
 
     const [Reviews, setReviews] = useState([]);
     useEffect(() => {
-        const url = `http://localhost:5000/reviews`
+        const url = `https://obscure-cove-62090.herokuapp.com/reviews`
         fetch(url, {
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

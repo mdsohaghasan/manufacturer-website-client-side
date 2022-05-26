@@ -30,7 +30,7 @@ const AddProduct = () => {
                         img: img
                     }
                     // send to your database 
-                    fetch('http://localhost:5000/products', {
+                    fetch('https://obscure-cove-62090.herokuapp.com/products', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',
