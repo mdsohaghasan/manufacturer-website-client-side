@@ -6,7 +6,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+## phone plus
+netlify live link  : https://phone-plus.netlify.app/
+
+firebase live link : https://phone-plus-4f5d3.web.app/
+
+heroku link : https://obscure-cove-62090.herokuapp.com/
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
