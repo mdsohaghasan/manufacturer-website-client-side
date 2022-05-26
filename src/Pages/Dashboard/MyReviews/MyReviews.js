@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { signOut } from 'firebase/auth';
 import auth from '../../../firebase.init';
 
@@ -52,11 +52,12 @@ const MyReviews = () => {
                             reviews.map((review, index) => <tr key={review._id}>
                                 <th>{index + 1}</th>
                                 <td>
-                                    <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+                                    <img src="https://api.lorem.space/image/face?hash=3174" />
+                                    {/* <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure> */}
                                     {/* <img src={review.img}></img> */}
                                 </td>
                                 <td>{review.name}</td>
-                                <td>{review.description}</td>
+                                <td>{review.shortDesc}</td>
                             </tr>)
                         }
                     </tbody>

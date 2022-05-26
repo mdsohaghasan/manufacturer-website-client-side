@@ -3,14 +3,13 @@ import { useForm } from "react-hook-form";
 import { toast } from 'react-toastify';
 import auth from '../../../firebase.init';
 import { useAuthState } from 'react-firebase-hooks/auth';
-// import { Link, useNavigate } from 'react-router-dom';
+
 
 const AddReview = () => {
 
-    // const [reviews, setReviews] = useState([]);
+
     const [user] = useAuthState(auth);
     console.log('amder user er name ki', user)
-    // const navigate = useNavigate()
 
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
@@ -35,7 +34,7 @@ const AddReview = () => {
                         shortDesc: data.shortDesc,
                         img: img
                     }
-                    // send to your database 
+
                     fetch('http://localhost:5000/reviews', {
                         method: 'POST',
                         headers: {
