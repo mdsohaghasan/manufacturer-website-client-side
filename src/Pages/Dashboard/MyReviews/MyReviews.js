@@ -53,7 +53,6 @@ const MyReviews = () => {
                                 <th>{index + 1}</th>
                                 <td>
                                     <img src="https://api.lorem.space/image/face?hash=3174" />
-                                    {/* <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure> */}
                                     {/* <img src={review.img}></img> */}
                                 </td>
                                 <td>{review.name}</td>

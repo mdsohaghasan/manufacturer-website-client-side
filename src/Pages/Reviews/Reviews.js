@@ -3,26 +3,7 @@ import { useState, useEffect } from "react";
 import Review from './Review';
 
 const Reviews = () => {
-    // const ReviewsItems = [
-    //     {
-    //         _id: 1,
-    //         name: 'Fluoride Treatment',
-    //         description: 'Now you can use React Router anywhere in your app! For a simple example, open'
 
-    //     },
-    //     {
-    //         _id: 2,
-    //         name: 'Cavity Filling',
-    //         description: 'Now you can use React Router anywhere in your app! For a simple example, open'
-
-    //     },
-    //     {
-    //         _id: 3,
-    //         name: 'Teeth Whitening',
-    //         description: 'Now you can use React Router anywhere in your app! For a simple example, open'
-
-    //     }
-    // ];
     const [Reviews, setReviews] = useState([]);
     useEffect(() => {
         const url = `http://localhost:5000/reviews`
