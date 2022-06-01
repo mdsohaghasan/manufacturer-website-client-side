@@ -1,57 +1,81 @@
-import React from 'react'
-import { useAuthState } from 'react-firebase-hooks/auth';
-import auth from '../../firebase.init';
+import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
 
 const PurchaseModal = ({ product, setItems }) => {
-    const [user, loading, error] = useAuthState(auth);
+  const [user, loading, error] = useAuthState(auth);
 
-    const handleBooking = event => {
-        event.preventDefault();
-        const PurchaseInfo = {
-            productId: product._id,
-            product: product.name,
-            Price: product.price,
-            customerName: user.displayName,
-            customerEmail: user.email,
-            phone: event.target.phone.value,
-            ShortDes: product.shortDesc,
-            photo: product.img
-        }
+  const handleBooking = (event) => {
+    event.preventDefault();
+    const PurchaseInfo = {
+      productId: product._id,
+      product: product.name,
+      Price: product.price,
+      customerName: user.displayName,
+      customerEmail: user.email,
+      phone: event.target.phone.value,
+      ShortDes: product.shortDesc,
+      photo: product.img,
+    };
 
-        fetch('https://obscure-cove-62090.herokuapp.com/PurchaseInfo', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(PurchaseInfo)
-        })
-            .then(res => res.json())
-            .then(data => {
-                setItems(null);
-            });
-
-    }
-    return (
-        <div>
-            <input type="checkbox" id="PurchaseModal" class="modal-toggle" />
-            <div class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box">
-                    <h3 class="font-bold text-lg">Your Product is {product.name} </h3>
-                    <h3 class="font-bold text-lg">Your Product is {product.price} </h3>
-                    <p class="py-4">{product.shortDesc}</p>
-                    <form onSubmit={handleBooking} className='grid grid-cols-1 gap-3 justify-items-center mt-2'>
-                        <input type="text" name="name" disabled value={user?.displayName || ''} className="input input-bordered w-full max-w-xs" />
-                        <input type="email" name="email" disabled value={user?.email || ''} className="input input-bordered w-full max-w-xs" />
-                        <input type="text" name="phone" placeholder="Phone Number" className="input input-bordered w-full max-w-xs" />
-                        <input type="submit" value="Submit" className="btn btn-secondary w-full max-w-xs" />
-                    </form>
-                    <div class="modal-action">
-                        <label for="PurchaseModal" class="btn">Yay!</label>
-                    </div>
-                </div>
-            </div>
+    fetch("https://obscure-cove-62090.herokuapp.com/PurchaseInfo", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(PurchaseInfo),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setItems(null);
+      });
+  };
+  return (
+    <div>
+      <input type="checkbox" id="PurchaseModal" class="modal-toggle" />
+      <div class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <h3 class="font-bold text-lg">Your Product is {product.name} </h3>
+          <h3 class="font-bold text-lg">Your Product is {product.price} </h3>
+          <p class="py-4">{product.shortDesc}</p>
+          <form
+            onSubmit={handleBooking}
+            className="grid grid-cols-1 gap-3 justify-items-center mt-2"
+          >
+            <input
+              type="text"
+              name="name"
+              disabled
+              value={user?.displayName || ""}
+              className="input input-bordered w-full max-w-xs"
+            />
+            <input
+              type="email"
+              name="email"
+              disabled
+              value={user?.email || ""}
+              className="input input-bordered w-full max-w-xs"
+            />
+            <input
+              type="text"
+              name="phone"
+              placeholder="Phone Number"
+              className="input input-bordered w-full max-w-xs"
+            />
+            <input
+              type="submit"
+              value="Submit"
+              className="btn btn-secondary w-full max-w-xs"
+            />
+          </form>
+          <div class="modal-action">
+            <label for="PurchaseModal" class="btn">
+              Yay!
+            </label>
+          </div>
         </div>
-    )
-
-}
-export default PurchaseModal
+      </div>
+    </div>
+  );
+};
+export default PurchaseModal;
