@@ -29,9 +29,8 @@ const Navbar = () => {
 
       {user ? (
         <li className="text-white">
-          <Link to="">{user?.displayName}</Link>
+          <Link to="/dashboard/myAccount">{user?.displayName}</Link>
         </li>
-        // <li class="nav-link">{user?.displayName}</li>
       ) : (
         <>
           <li className="text-white">
