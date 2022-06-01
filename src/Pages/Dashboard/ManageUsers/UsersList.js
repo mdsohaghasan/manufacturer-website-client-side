@@ -5,7 +5,7 @@ const UsersList = ({ user, refetch }) => {
   const { email, role } = user;
   const handleAdmin = () => {
     fetch(
-      `https://car-manufacturer-app.herokuapp.com/manageusers/admin/${email}`,
+      `https://limitless-brushlands-40297.herokuapp.com/manageusers/admin/${email}`,
       {
         method: "PUT",
         headers: {
