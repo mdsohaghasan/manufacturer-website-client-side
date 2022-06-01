@@ -28,7 +28,10 @@ const Navbar = () => {
       </li>
 
       {user ? (
-        <li class="nav-link">{user?.displayName}</li>
+        <li className="text-white">
+          <Link to="">{user?.displayName}</Link>
+        </li>
+        // <li class="nav-link">{user?.displayName}</li>
       ) : (
         <>
           <li className="text-white">
@@ -86,7 +89,7 @@ const Navbar = () => {
           <div>
             <label tabindex="0" class="btn btn-ghost btn-circle avatar">
               <div class="w-10 rounded-full">
-                <img src="https://api.lorem.space/image/face?hash=33791" />
+                <img src={user.img} />
               </div>
             </label>
             <ul
