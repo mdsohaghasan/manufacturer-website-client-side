@@ -91,9 +91,9 @@ const Navbar = () => {
             </label>
             <ul
               tabindex="0"
-              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52"
+              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52"
             >
-              <li className="text-white">
+              <li>
                 <Link to="dashboard/myAccount" class="justify-between">
                   {" "}
                   MyAccount{" "}
@@ -101,11 +101,11 @@ const Navbar = () => {
               </li>
 
               {user && (
-                <li className="text-white">
+                <li>
                   <Link to="/dashboard">Dashboard</Link>
                 </li>
               )}
-              <li className="text-white">
+              <li>
                 {user ? (
                   <button
                     className="btn btn-primary text-white"

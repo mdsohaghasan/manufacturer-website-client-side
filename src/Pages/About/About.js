@@ -1,10 +1,10 @@
 import React from "react";
 import "./About.css";
-import img from "../../../src/images/about/sajid.png";
+import img from "../../../src/images/about/sohag.png";
 
 const About = () => {
   return (
-    <div class=" mx-24 mx-auto">
+    <div class=" mx-20 mx-auto">
       <div class="hero min-h-screen">
         <div class="hero-content flex-col lg:flex-row-reverse">
           <img src={img} class="max-w-sm rounded-lg" />
