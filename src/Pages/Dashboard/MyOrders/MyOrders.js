@@ -12,7 +12,7 @@ const MyOrders = () => {
   useEffect(() => {
     if (user) {
       fetch(
-        `https://obscure-cove-62090.herokuapp.com/PurchaseInfo?customerEmail=${user.email}`,
+        `https://limitless-brushlands-40297.herokuapp.com/PurchaseInfo?customerEmail=${user.email}`,
         {
           method: "GET",
           headers: {

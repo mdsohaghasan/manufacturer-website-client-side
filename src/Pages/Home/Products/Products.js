@@ -5,7 +5,7 @@ import Product from "./Product";
 const Products = () => {
   const [Items, setItems] = useState([]);
   useEffect(() => {
-    const url = `https://obscure-cove-62090.herokuapp.com/products`;
+    const url = `https://limitless-brushlands-40297.herokuapp.com/products`;
     fetch(url, {
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

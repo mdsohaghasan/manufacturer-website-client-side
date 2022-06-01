@@ -12,7 +12,7 @@ const MyReviews = () => {
   useEffect(() => {
     if (user) {
       fetch(
-        `https://car-manufacturer-app.herokuapp.com/reviews?customerEmail=${user.email}`,
+        `https://limitless-brushlands-40297.herokuapp.com/reviews?customerEmail=${user.email}`,
         {
           method: "GET",
           headers: {

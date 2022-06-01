@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 const ManageOrders = () => {
   const [Itemes, setItemes] = useState([]);
   useEffect(() => {
-    const url = `https://obscure-cove-62090.herokuapp.com/PurchaseInfo`;
+    const url = `https://limitless-brushlands-40297.herokuapp.com/PurchaseInfo`;
     fetch(url, {
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -20,7 +20,7 @@ const ManageOrders = () => {
     const proceed = window.confirm("are you sure deleteing");
     if (proceed) {
       console.log(id);
-      const url = `https://obscure-cove-62090.herokuapp.com/PurchaseInfo/${id}`;
+      const url = `https://limitless-brushlands-40297.herokuapp.com/PurchaseInfo/${id}`;
       fetch(url, {
         method: "DELETE",
         headers: {

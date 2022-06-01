@@ -10,7 +10,7 @@ const About = () => {
           <img src={img} class="max-w-sm rounded-lg" />
           <div class="intro text-left">
             <h3 className="text-2xl font-bold text-primary">Hi, I'm</h3>
-            <h1 className="text-6xl font-bold py-2">Sajid Hasan</h1>
+            <h1 className="text-6xl font-bold py-2">Sohag Hasan</h1>
             <h3 className="text-2xl font-bold text-primary ">
               Full Stack Web developer
             </h3>

@@ -18,7 +18,7 @@ const PurchaseModal = ({ product, setItems }) => {
       photo: product.img,
     };
 
-    fetch("https://obscure-cove-62090.herokuapp.com/PurchaseInfo", {
+    fetch("https://limitless-brushlands-40297.herokuapp.com/PurchaseInfo", {
       method: "POST",
       headers: {
         "content-type": "application/json",

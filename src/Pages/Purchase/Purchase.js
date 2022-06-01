@@ -9,7 +9,7 @@ import { useQuery } from "react-query";
 const Purchase = () => {
   const [product, setItems] = useState([]);
   const { id } = useParams();
-  const url = `https://obscure-cove-62090.herokuapp.com/products/${id}`;
+  const url = `https://limitless-brushlands-40297.herokuapp.com/products/${id}`;
 
   const { data: products, isLoading } = useQuery(["PurchaseInfo", id], () =>
     fetch(url, {
