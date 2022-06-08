@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "car-manufacturer-app"
-  }
+    "default": "phone-plus-4f5d3",
+    "y": "phone-plus-4f5d3"
+  },
+  "targets": {}
 }

@@ -1,9 +1,11 @@
 import React from 'react'
 
 const Review = ({ review }) => {
+    console.log(review)
     return (
         <div class="card w-96 bg-base-100 shadow-xl image-full">
-            <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+            <figure><img src={review.img} alt="Shoes" /></figure>
+            {/* <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure> */}
             <div class="card-body">
                 <p>{review.shortDesc}</p>
                 <div class="avatar ">

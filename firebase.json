@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "car-manufacturer-app",
     "public": "build",
     "ignore": [
       "firebase.json",

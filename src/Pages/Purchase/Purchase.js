@@ -62,7 +62,7 @@ const Purchase = () => {
                   for="PurchaseModal"
                   class="btn modal-button"
                 >
-                  open modal
+                  Purchase
                 </label>
               </div>
             </div>

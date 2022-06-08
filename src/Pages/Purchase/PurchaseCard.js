@@ -9,7 +9,7 @@ const PurchaseCard = ({ product, setItems }) => {
                 <h2 class="card-title">Price : {product.price}</h2>
                 <p>{product.shortDesc}</p>
                 <div class="card-actions justify-end">
-                    <label for="PurchaseModal" class="btn modal-button">open modal</label>
+                    <label for="PurchaseModal" class="btn modal-button">Purchase</label>
                 </div>
             </div>
         </div>
