@@ -36,7 +36,7 @@ const AddReview = () => {
             img: img,
           };
 
-          fetch("https://limitless-brushlands-40297.herokuapp.com/reviews", {
+          fetch("https://obscure-cove-62090.herokuapp.com/reviews", {
             method: "POST",
             headers: {
               "content-type": "application/json",

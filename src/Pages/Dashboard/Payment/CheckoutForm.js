@@ -72,7 +72,7 @@ const CheckoutForm = ({ Purchase }) => {
         Purchase: _id,
         transactionId: paymentIntent.id,
       };
-      fetch(`https://limitless-brushlands-40297.herokuapp.com/PurchaseInfo/${_id}`, {
+      fetch(`https://obscure-cove-62090.herokuapp.com/PurchaseInfo/${_id}`, {
         method: "PATCH",
         headers: {
           "content-type": "application/json",

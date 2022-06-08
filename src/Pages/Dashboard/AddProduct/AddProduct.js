@@ -33,7 +33,7 @@ const AddProduct = () => {
             img: img,
           };
           // send to your database
-          fetch("https://limitless-brushlands-40297.herokuapp.com/products", {
+          fetch("https://obscure-cove-62090.herokuapp.com/products", {
             method: "POST",
             headers: {
               "content-type": "application/json",

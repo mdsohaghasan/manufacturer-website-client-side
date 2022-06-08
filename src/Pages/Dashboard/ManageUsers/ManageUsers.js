@@ -9,7 +9,7 @@ const ManageUsers = () => {
     isLoading,
     refetch,
   } = useQuery("users", () =>
-    fetch("https://limitless-brushlands-40297.herokuapp.com/manageusers", {
+    fetch("https://obscure-cove-62090.herokuapp.com/manageusers", {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

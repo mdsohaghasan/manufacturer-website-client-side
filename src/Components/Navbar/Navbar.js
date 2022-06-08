@@ -28,9 +28,7 @@ const Navbar = () => {
       </li>
 
       {user ? (
-        <li className="text-white">
-          <Link to="/dashboard/myAccount">{user?.displayName}</Link>
-        </li>
+        <li class="nav-link">{user?.displayName}</li>
       ) : (
         <>
           <li className="text-white">
@@ -72,9 +70,9 @@ const Navbar = () => {
         </div>
         <Link
           to="/"
-          className="normal-case text-white text-2xl font-bold ml-10"
+          className="normal-case text-white text-5xl font-bold ml-10"
         >
-          Phone Plus
+          Phone +Plus
         </Link>
       </div>
       <div className="navbar-center bg-primary hidden lg:flex">
@@ -88,12 +86,12 @@ const Navbar = () => {
           <div>
             <label tabindex="0" class="btn btn-ghost btn-circle avatar">
               <div class="w-10 rounded-full">
-                <img src={user.img} />
+                <img src="https://api.lorem.space/image/face?hash=33791" />
               </div>
             </label>
             <ul
               tabindex="0"
-              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52"
+              class="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52"
             >
               <li>
                 <Link to="dashboard/myAccount" class="justify-between">
